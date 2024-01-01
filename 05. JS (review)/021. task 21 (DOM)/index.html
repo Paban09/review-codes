@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/style1.css" />
+    <title>DOM</title>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container">
+            <a href="" class="navbar-brand">Logo</a>
+
+            <button type="button" class="navbar-toggler" data-bs-target="#menu" data-bs-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li><a class="nav-link" href="index.html">Home</a></li>
+                    <li><a class="nav-link" href="#">To-Do</a></li>
+    
+                    <!-- dropdown menu  -->
+                    <li class="dropdown">
+                        <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" >Service</a>
+                        <ul class="dropdown-menu">
+                            <li><a  class="dropdown-item" href="#">Service - 1</a></li>
+                            <li><a  class="dropdown-item" href="#">Service - 2</a></li>
+                            <li><a  class="dropdown-item" href="#">Service - 3</a></li>
+                        </ul>
+                    </li>      
+                    <li><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        
+    </nav>
+
+    <section class="py-5  manage-section">
+        <div class="container">
+            
+            <div class="row headline">
+                <div class="col-md-8 mx-auto">
+                    <h1 id="main-heading" class=" text-center text-white fw-bold">Manage your Task</h1>
+                    <div class="row pt-2">
+                        <div class="col-sm-4"></div>
+                        <div class="col-sm-4">
+                            <a id="learn-more" class="btn btn-success px-5" href="#">Learn More</a>
+                        </div>
+                        <div class="col-sm-4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-secondary">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="card bg-transparent ">
+                        <h3 class="text-center text-white second-heading">Your Plan Today</h3>
+                        <!-- <div class="card-header text-white text-center fw-bold">Your Plan Today</div> -->
+                        <div class="card-body">
+
+                            <form action="index.html" method="get">
+                            
+                                <div id="inputForm" class="row mt-3">
+                                                                        
+                                    <div class="col-sm-9">
+                                        <input type="text" placeholder="Add To-do" name="content" id="" class="form-control">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <input type="submit" name="add_todo" class="btn btn-success px-5" value="Add">
+                                    </div>
+                                    
+                                </div>
+
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    
+    <script src="./js/bootstrap.bundle.js" defer></script>
+    <script src="./js/file21.js" defer></script>
+</body>
+</html> 

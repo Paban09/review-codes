@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <title>Navbar</title>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container">
+            <a href="" class="navbar-brand">Logo</a>
+
+            <button type="button" class="navbar-toggler" data-bs-target="#menu" data-bs-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li><a class="nav-link" href="#">Home</a></li>
+                    <li><a class="nav-link" href="#">About</a></li>
+                    <li><a class="nav-link" href="#">Portfolio</a></li>
+    
+                    <!-- dropdown menu  -->
+                    <li class="dropdown">
+                        <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" >Service</a>
+                        <ul class="dropdown-menu">
+                            <li><a  class="dropdown-item" href="">Service - 1</a></li>
+                            <li><a  class="dropdown-item" href="">Service - 2</a></li>
+                            <li><a  class="dropdown-item" href="">Service - 3</a></li>
+                        </ul>
+                    </li>
+    
+      
+                    <li><a class="nav-link" href="#">Gallery</a></li>
+                    <li><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        
+    </nav>
+
+    
+    <script src="./js/bootstrap.bundle.js" defer></script>
+</body>
+</html> 
