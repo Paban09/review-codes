@@ -84,7 +84,7 @@ let inputElement=document.querySelector("form div div.col-sm-3 input");
 console.log(inputElement);
 console.log(inputElement.getAttribute('value'));  
 //setting attribute
-inputElement.setAttribute('value', 'Add Todo ');
+inputElement.setAttribute('value', 'Add Todo');
 console.log(inputElement.getAttribute('value'));  
 
 
@@ -190,9 +190,6 @@ headline.innerHTML+="<p class='text-white fw-bold text-center py-3'>Added the ne
 
 
 
-
-
-
 //tree traversing
 
 let root = document.getRootNode();
@@ -212,7 +209,65 @@ console.log(input.parentNode.parentNode);
 
 //sibling traverse node
 console.log(input.parentNode.nextSibling);
+console.log(input.parentNode.nextElementSibling);
 
 
 // input.parentNode.parentNode.style.backgroundColor="black";
 console.log(input.parentNode.getAttribute('method'));
+
+
+
+let newHeader=document.getElementById('main-heading');
+console.log(newHeader);
+
+console.log(newHeader.childNodes);
+console.log(newHeader.parentNode);
+
+console.log(newHeader.innerText);
+newHeader.innerText='Manage Your Daily Task';
+newHeader.innerHTML +="<p>Do it !!!</p>";
+
+newHeader.style.color='red';
+
+
+//to traverse into the particular child
+// let input= document.getElementById('inputForm');
+console.log(input.childNodes[1]);
+// console.log(input.childNodes[1].childNodes);
+
+console.log(input.childNodes[1].querySelector('input').getAttribute('placeholder'));
+let text=(input.childNodes[1].querySelector('input'));
+console.log(text);
+text.setAttribute('placeholder','add what to do');
+text.setAttribute('id','firstInput');
+console.log(text);
+
+
+console.log(input);
+console.log(input.children[1].querySelector('input').getAttribute('value'));
+let btn=(input.children[1].querySelector('input'));
+btn.setAttribute('value','Add');
+
+
+
+
+
+
+
+
+
+
+//add class using js
+console.log(secondHeading);
+console.log(secondHeading.classList);
+secondHeading.classList.add('bg-primary');
+secondHeading.classList.add('fw-bold');
+console.log(secondHeading.classList);
+
+//remove class using js
+secondHeading.classList.remove('text-white');
+console.log(secondHeading.classList);
+
+
+//any class exist or not - returns true or false
+secondHeading.classList.contains('bg-dark');
