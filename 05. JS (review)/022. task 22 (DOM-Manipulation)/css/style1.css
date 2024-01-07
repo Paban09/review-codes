@@ -1,0 +1,23 @@
+
+.manage-section{
+    background:url(../img/image1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.card{
+    border: none;
+}
+
+.todo-list{
+    
+    list-style-type: none;
+}
+
+.todo-list li{
+    padding: 10px;
+    background-color: black;
+    
+}
